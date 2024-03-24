@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+   --Dark-Grayish-blue: hsl(236, 13%, 42%); 
+   --Soft-red: hsl(5, 85%, 63%);
+   --Soft-orange: hsl(35, 77%, 62%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img1{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Inter"
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 30px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+.links ul{
+    display: flex;
+    gap: 1rem;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-blue);
+    transition: 0.3s ease;
+}
+
+.links ul li a:hover{
+    color: var(--Soft-red);
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.new_articles{
+    background-color:hsl(240, 100%, 5%);
+    font-family: "inter",sans-serif;
+    color: hsl(36, 100%, 99%);
+    padding: 2rem;
+
+}
+
+.heading{
+    font-size: 2.5rem;
+    margin-top: 7px;
+    color: var(--Soft-orange);
+}
+
+.article{
+    margin: 25px 5px;
+}
+.article a{
+    
+    color: hsl(36, 100%, 99%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom:1rem ;
+    display: inline-block;
+    transition: color 0.5s ease;
+    text-decoration: none;
+    
+}
+.hero_text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-family: "inter",sans-serif;
+}
+
+.hero_text h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.button{
+    background-color: hsl(5, 35%, 63%);
+    padding: 1em 1.5em;
+    display: inline-block;
+    margin-top: 1.5em;
+    text-decoration: none;
+    color: hsl(36, 100%, 99%);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    transition: background-color 0.5s ease;
+}
+.call_out a:hover{
+    color: blueviolet;
+    background-color: black;
+}
+
+
+.articles{
+    display: flex;
+    gap: 1rem;
+    margin: 4rem 0;
+}
+.article a:hover{
+    color: grey;
+}
+
+.new_article{
+    display: flex;
+    gap: 1rem;
+}
+.new_article .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.new_article img{
+    min-width: 120px;
+
+}
+.content h2{
+    color: hsl(233, 8%, 69%);
+    font-size: 2em;
+}
+.content h3:hover{
+    color:grey;
+}
+
+@media screen and (max-width:800px) {
+  .hero{
+    grid-template-columns: 1fr;
+    
+  } 
+  .articles{
+    flex-direction: column;
+
+  }
+
+}
+
+
+
